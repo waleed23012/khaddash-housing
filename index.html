@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>شركة الخداش للإسكان | التصميم الداخلي بتقنية  360°</title>
+    <title>شركة الخداش للإسكان | التصميم الداخلي بتقنية 360°</title>
     <meta name="description" content="شركة الخداش للإسكان — استكشف التصميم الداخلي بتقنية 360°.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,29 @@
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* تنسيق حاوية العرض المباشر لضمان توافقها مع الهواتف والأجهزة اللوحية */
+        .pano-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 65%;
+            /* نسبة الارتفاع للعرض */
+            height: 0;
+            background: #111;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .pano-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,12 +52,13 @@
             <div class="container hero-content">
                 <p class="eyebrow">KHADDASH HOUSING · 360° EXPERIENCE</p>
                 <h1>شركة الخداش<br><em>للإسكان</em></h1>
-                <p class="hero-sub">  استكشف التصميم الداخلي بتقنية 360°</p>
+                <p class="hero-sub"> استكشف التصميم الداخلي بتقنية 360°</p>
                 <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
                     <a class="btn" href="#spaces">استكشف المساحات <span>←</span></a>
                     <a class="btn" style="background-color: #2b2b2b; color: #fff;"
-                        href="https://my.matterport.com/show/?m=xfNRwHskn5R" target="_blank" rel="noopener">شاهد الشقة
-                        كاملة  ↗</a>
+                        href="https://my.matterport.com/show/?m=xfNRwHskn5R" target="_blank"
+                        rel="noopener noreferrer">شاهد الشقة
+                        كاملة ↗</a>
                 </div>
             </div>
             <div class="scroll">مرّر للاستكشاف <span></span></div>
@@ -49,6 +73,7 @@
                     وشاهدها بتجربة 360° تفاعلية.</p>
             </div>
         </section>
+
         <section class="spaces" id="spaces">
             <div class="container">
                 <div class="section-head">
@@ -56,47 +81,72 @@
                         <p class="eyebrow dark">استكشف المساحات</p>
                         <h2>استكشف مساحات المنزل</h2>
                     </div>
-                    <p>شاهد التصاميم الداخلية واستكشف كل مساحة بتجربة 360° تفاعلية.</p>
+                    <p>شاهد التصاميم الداخلية واستكشف كل مساحة بتجربة 360° تفاعلية مباشرة.</p>
                 </div>
                 <div class="grid">
-                    <article class="card"><img src="assets/outdoor.png" alt="الجلسة الخارجية">
-                        <div class="card-info"><span>01</span>
-                            <h3>الجلسة الخارجية</h3><a target="_blank" rel="noopener"
-                                href="https://kuula.co/share/LnCwn?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1">استكشف 360°
-                                ↗</a>
+                    <!-- الجلسة الخارجية -->
+                    <article class="card">
+                        <div class="card-info">
+                            <span>01</span>
+                            <h3>الجلسة الخارجية</h3>
+                        </div>
+                        <div class="pano-container">
+                            <iframe src="https://kuula.co/share/LnCwn?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1"
+                                allowfullscreen allow="xr; accelerometer; gyroscope"></iframe>
                         </div>
                     </article>
-                    <article class="card"><img src="assets/living-kitchen.png" alt="غرفة المعيشة مع المطبخ">
-                        <div class="card-info"><span>02</span>
-                            <h3>غرفة المعيشة مع المطبخ</h3><a target="_blank" rel="noopener"
-                                href="https://kuula.co/share/Ln2Z9?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1">استكشف 360°
-                                ↗</a>
+
+                    <!-- غرفة المعيشة مع المطبخ -->
+                    <article class="card">
+                        <div class="card-info">
+                            <span>02</span>
+                            <h3>غرفة المعيشة مع المطبخ</h3>
+                        </div>
+                        <div class="pano-container">
+                            <iframe src="https://kuula.co/share/Ln2Z9?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1"
+                                allowfullscreen allow="xr; accelerometer; gyroscope"></iframe>
                         </div>
                     </article>
-                    <article class="card"><img src="assets/master-bedroom.png" alt="غرفة النوم الماستر">
-                        <div class="card-info"><span>03</span>
-                            <h3>غرفة النوم الماستر</h3><a target="_blank" rel="noopener"
-                                href="https://kuula.co/share/LnCb2?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1">استكشف 360°
-                                ↗</a>
+
+                    <!-- غرفة النوم الماستر -->
+                    <article class="card">
+                        <div class="card-info">
+                            <span>03</span>
+                            <h3>غرفة النوم الماستر</h3>
+                        </div>
+                        <div class="pano-container">
+                            <iframe src="https://kuula.co/share/LnCb2?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1"
+                                allowfullscreen allow="xr; accelerometer; gyroscope"></iframe>
                         </div>
                     </article>
-                    <article class="card"><img src="assets/girls-bedroom.png" alt="غرفة نوم البنات">
-                        <div class="card-info"><span>04</span>
-                            <h3>غرفة نوم البنات</h3><a target="_blank" rel="noopener"
-                                href="https://kuula.co/share/Ln2vp?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1">استكشف 360°
-                                ↗</a>
+
+                    <!-- غرفة نوم البنات -->
+                    <article class="card">
+                        <div class="card-info">
+                            <span>04</span>
+                            <h3>غرفة نوم البنات</h3>
+                        </div>
+                        <div class="pano-container">
+                            <iframe src="https://kuula.co/share/Ln2vp?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1"
+                                allowfullscreen allow="xr; accelerometer; gyroscope"></iframe>
                         </div>
                     </article>
-                    <article class="card"><img src="assets/guest-room.png" alt="المضافة">
-                        <div class="card-info"><span>05</span>
-                            <h3>المضافة</h3><a target="_blank" rel="noopener"
-                                href="https://kuula.co/share/LnCg4?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1">استكشف 360°
-                                ↗</a>
+
+                    <!-- المضافة -->
+                    <article class="card">
+                        <div class="card-info">
+                            <span>05</span>
+                            <h3>المضافة</h3>
+                        </div>
+                        <div class="pano-container">
+                            <iframe src="https://kuula.co/share/LnCg4?logo=1&info=1&fs=1&vr=0&gyro=0&thumbs=1"
+                                allowfullscreen allow="xr; accelerometer; gyroscope"></iframe>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
+
         <section class="statement">
             <div class="container">
                 <p>نصنع تجربة تجعل<br><strong>المكان يُرى قبل أن يُعاش.</strong></p><a class="circle-btn"
